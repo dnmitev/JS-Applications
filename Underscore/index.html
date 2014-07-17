@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Underscore.js</title>
+    <link href="Styles/style.min.css" rel="stylesheet" />
+    <script src="Scripts/libs/require.js" data-main="Scripts/main"></script>
+</head>
+<body>
+    <header id="top-header">
+        <p>
+            Implement with <span class="important">Underscore.js</span>:
+        </p>
+        <ol>
+            <li>
+                Write a method that from a given array of students finds all students whose first name is before its last name alphabetically. Print the students in descending order by full name.
+            </li>
+            <li>
+                Write function that finds the first name and last name of all students with age between 18 and 24.
+            </li>
+            <li>
+                Write a function that by a given array of students finds the student with highest marks
+            </li>
+            <li>
+                Write a function that by a given array of animals, groups them by species and sorts them by number of legs
+            </li>
+            <li>
+                By a given array of animals, find the total number of legs
+                <ul>
+                    <li>Each animal can have 2, 4, 6, 8 or 100 legs</li>
+                </ul>
+            </li>
+            <li>
+                By a given collection of books, find the most popular author (the author with the highest number of books)
+            </li>
+            <li>
+                By an array of people find the most common first and last name.
+            </li>
+        </ol>
+    </header>
+    <div id="students-container">
+        <h1>Students with first name before las name:</h1>
+        <ul id="students-list" data-template="student-item-template"></ul>
+    </div>
+
+    <script id="student-item-template" type="text/x-handlebars-template">
+        <li class="student-item">
+            <ul>
+                <li>
+                    <strong>Name:</strong>
+                    {{firstName}}
+                    {{lastName}}
+                </li>
+                <li>
+                    <strong>Age:</strong>
+                    {{age}}
+                </li>
+                <li>
+                    <strong>Marks:</strong>
+                    <ul>
+                        {{#marks}}
+                        <li>
+                            math: {{this.math}}
+                        </li>
+                        <li>
+                            physics: {{this.physics}}
+                        </li>
+                        <li>
+                            biology: {{this.biology}}
+                        </li>
+                        <li>
+                            history: {{this.history}}
+                        </li>
+                        <li>
+                            science: {{this.science}}
+                        </li>
+                        {{/marks}}
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </script>
+</body>
+</html>
