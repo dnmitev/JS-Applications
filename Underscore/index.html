@@ -38,47 +38,12 @@
             </li>
         </ol>
     </header>
-    <div id="students-container">
-        <h1>Students with first name before las name:</h1>
-        <ul id="students-list" data-template="student-item-template"></ul>
-    </div>
-
-    <script id="student-item-template" type="text/x-handlebars-template">
-        <li class="student-item">
-            <ul>
-                <li>
-                    <strong>Name:</strong>
-                    {{firstName}}
-                    {{lastName}}
-                </li>
-                <li>
-                    <strong>Age:</strong>
-                    {{age}}
-                </li>
-                <li>
-                    <strong>Marks:</strong>
-                    <ul>
-                        {{#marks}}
-                        <li>
-                            math: {{this.math}}
-                        </li>
-                        <li>
-                            physics: {{this.physics}}
-                        </li>
-                        <li>
-                            biology: {{this.biology}}
-                        </li>
-                        <li>
-                            history: {{this.history}}
-                        </li>
-                        <li>
-                            science: {{this.science}}
-                        </li>
-                        {{/marks}}
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </script>
+    <section>
+        <header>
+            <h1>
+                Please check the console for results. Press F12.
+            </h1>
+        </header>
+    </section>
 </body>
 </html>
