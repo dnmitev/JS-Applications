@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Sheep & Rams</title>
+    <link href="styles/styles.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="game-board">
+            <header id="game-header">
+                <p>
+                    Try to guess the 4-digit number. Each guessed digit from the number means 1 sheep. If the guessed number is in its place it is one ram.
+                    <strong>NOTE: First number digit CANNOT be 0.</strong>
+                </p>
+            </header>
+            <section id="game-data">
+                <label for="number-input">Enter your number here: </label>
+                <input type="text" placeholder="1234..." id="number-input" />
+                <button id="try-btn" type="button">TRY :)</button>
+            </section>
+            <section id="game-messages">
+                <ul>
+                    <li>
+                        Sheep: <strong id="sheep"></strong>
+                    </li>
+                    <li>
+                        Rams: <strong id="rams"></strong>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div id="player-data">
+            <h1>Number guessed! Please enter your name to save your score.</h1>
+            <label for="name-input">Player's name:</label>
+            <input type="text" placeholder="Name..." id="name-input" />
+            <button id="save-player-btn" type="submit">Save</button>
+        </div>
+        <div id="score-container">
+            <header>
+                <h1>
+                    Top Scores:
+                </h1>
+            </header>
+            <ol id="score-list" data-template="score-list-template"></ol>
+        </div>
+    </div>
+
+    <script id="score-list-template" type="text/x-handlebars-template">
+        <li class="score-item">
+            <strong>{{name}}</strong>: {{attempts}}
+        </li>
+    </script>
+
+    <script src="scripts/libs/require.js" data-main="scripts/main"></script>
+</body>
+</html>
