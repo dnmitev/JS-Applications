@@ -1,4 +1,4 @@
-﻿body,
+body,
 header,
 footer,
 aside,
@@ -38,6 +38,7 @@ body div#wrapper header#site-header {
   background: linear-gradient(to bottom, #0b6f0b 0%, #89ffb0 75%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0b6f0b', endColorstr='#89ffb0', GradientType=0);
   background-repeat: no-repeat;
+  zoom: 1;
   -pie-background: linear-gradient(#0b6f0b, #89ffb0);
   behavior: url(../Scripts/PIE_uncompressed.htc);
   margin-bottom: 25px;
@@ -61,7 +62,6 @@ body div#wrapper header#site-header nav ul li {
   padding: 5px;
   border-right: 1px solid black;
   text-align: center;
-  behavior: url(../Scripts/PIE_uncompressed.htc);
 }
 body div#wrapper header#site-header nav ul li a {
   color: #123456;
@@ -82,6 +82,7 @@ body div#wrapper aside {
   text-align: center;
   border: 1px solid black;
   border-radius: 15px;
+  position: relative;
   background: #effff4;
   background: -moz-linear-gradient(top, #89ffb0 0%, #effff4 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #89ffb0), color-stop(100%, #effff4));
@@ -91,6 +92,7 @@ body div#wrapper aside {
   background: linear-gradient(to bottom, #89ffb0 0%, #effff4 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#89ffb0', endColorstr='#effff4', GradientType=0);
   background-repeat: no-repeat;
+  zoom: 1;
   -pie-background: linear-gradient(#89ffb0, #effff4);
   behavior: url(../Scripts/PIE_uncompressed.htc);
 }
@@ -180,4 +182,3 @@ body div#wrapper footer h2 {
   text-align: center;
   font-size: 1.4em;
 }
-/*# sourceMappingURL=task1.css.map */
