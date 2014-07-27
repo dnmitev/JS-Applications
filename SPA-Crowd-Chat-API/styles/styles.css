@@ -1,0 +1,39 @@
+﻿body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  color: yellowgreen;
+}
+#nav {
+  list-style: none;
+  text-align: center;
+}
+#nav li {
+  display: inline-block;
+  border: 1px solid yellowgreen;
+  border-radius: 10px;
+}
+#nav li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 10px;
+  color: yellowgreen;
+}
+#nav li:hover {
+  background: grey;
+}
+.important {
+  color: red;
+}
+dl {
+  padding-left: 20px;
+}
+dl dt {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+dl dd {
+  font-size: 0.7em;
+  font-style: italic;
+}
+/*# sourceMappingURL=styles.css.map */
