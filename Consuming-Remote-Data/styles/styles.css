@@ -1,0 +1,41 @@
+﻿body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: black;
+  color: yellowgreen;
+}
+#nav {
+  list-style: none;
+  text-align: center;
+}
+#nav li {
+  display: inline-block;
+  border: 1px solid yellowgreen;
+  border-radius: 10px;
+}
+#nav li a {
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 5px;
+  margin: 10px;
+  color: yellowgreen;
+}
+#nav li:hover {
+  background: grey;
+}
+#students-container a {
+  color: red;
+}
+#students-container a:hover {
+  font-weight: bold;
+}
+#students-container .name {
+  font-style: italic;
+  font-weight: bold;
+}
+#students-container .grade {
+  font-style: italic;
+}
+.important {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */
