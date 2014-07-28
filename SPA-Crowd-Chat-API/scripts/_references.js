@@ -8,10 +8,13 @@
 /// <reference path="../modules/http-requester.js" />
 /// <reference path="../modules/template-engine.js" />
 /// <reference path="../modules/view-loader.js" />
-/// <reference path="../controllers/add-student-controller.js" />
 
-/// <reference path="../controllers/delete-student-controller.js" />
-/// <reference path="../controllers/list-students-controller.js" />
 
 /// <reference path="module-loader.js" />
 /// <reference path="config.js" />
+/// <reference path="../controllers/chat-controller.js" />
+/// <reference path="../controllers/send-controller.js" />
+/// <reference path="../libs/r.js" />
+/// <reference path="../libs/sammy-0.7.4.js" />
+/// <reference path="../libs/underscore-min.js" />
+/// <reference path="main.js" />
