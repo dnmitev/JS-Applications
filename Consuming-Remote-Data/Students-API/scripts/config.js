@@ -10,7 +10,7 @@ define(function () {
         mainCointainer: '#main-container',
 
         // path to partial html files
-        templatesPath: '../views/',
+        templatesPath: '../Students-API/views/',
 
         //  path to controller apis
         controllersPath: '../controllers/'

@@ -4,7 +4,7 @@
 
     require.config({
         // stop caching js files
-        urlArgs: "bust=" + (new Date()).getTime(),
+        // urlArgs: "bust=" + (new Date()).getTime(),
         paths: {
             // libs
             'jquery': '../libs/jquery-2.1.1',
