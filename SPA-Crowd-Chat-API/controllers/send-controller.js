@@ -16,6 +16,10 @@ define(['jquery', 'modules'], function ($, modules) {
                     modules.request.postJSON(url, chatMessage)
 
                     $('p').html('Your message has been sent');
+
+                    setTimeout(function () {
+                        modules.redirect('#/chat');
+                    }, 1500);
                 });
             });
     }

@@ -1,5 +1,5 @@
 ﻿/// <reference path="../scripts/_references.js" />
-define(['jquery', 'modules'], function ($, modules) {
+define(['jquery', 'underscore', 'modules'], function ($, _, modules) {
     "use strict";
 
     var url = modules.config.apiURL;
@@ -9,7 +9,11 @@ define(['jquery', 'modules'], function ($, modules) {
             .then(function () {
                 modules.request.getJSON(url)
                     .then(function (data) {
-                        $('#posts-container').executeTemplate(data);
+                        // due to the enormous amount of spam only the last 20 messages are posted
+                        // because doing the DOM is slow operation
+                        // in future I may add paging and eventaully list all of the messages
+                        var filtered = _.last(data, 20);
+                        $('#posts-container').executeTemplate(filtered);
                     });
             });
     }

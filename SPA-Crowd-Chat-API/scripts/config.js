@@ -10,7 +10,7 @@ define(function () {
         mainCointainer: '#main-container',
 
         // path to partial HTML files
-        templatesPath: '../views/',
+        templatesPath: '../SPA-Crowd-Chat-API/views/',
 
         //  path to controller APIs
         controllersPath: '../controllers/'
